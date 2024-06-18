@@ -1,0 +1,48 @@
+[tools]
+"tuist" = "4.15.0"
+"swiftlint" = "0.54.0"
+"swiftformat" = "0.52.10"
+"swift" = "5.9.2"
+"npm:wrangler" = "3.28.4"
+"node" = "20.11.1"
+
+[tasks."build"]
+description = "Builds the package using Tuist"
+run = "./scripts/tasks/workspace/build.sh"
+
+[tasks."cache"]
+description = "Warms the Tuist cache"
+run = "./scripts/tasks/workspace/cache.sh"
+
+[tasks."test"]
+description = "Tests the package using the Tuist"
+run = "./scripts/tasks/workspace/test.sh"
+
+[tasks."lint"]
+description = "Lints the codebase"
+run = "./scripts/tasks/workspace/lint.sh"
+
+[tasks."lint:fix"]
+description = "Lints the codebase fixing the fixable issues"
+run = "./scripts/tasks/workspace/lint-fix.sh"
+
+[tasks."preview:docs"]
+description = "Previews the documentation"
+run = "./scripts/tasks/workspace/docs-preview.sh"
+
+[tasks."build:docs"]
+description = "Builds the documentation"
+run = "./scripts/tasks/workspace/docs-build.sh"
+
+[tasks."deploy:docs"]
+description = "Deloys the documentation"
+run = "wrangler pages deploy .build/documentation --project-name tuist-macker --branch main"
+
+[tasks."bundle"]
+description = "Bundles macker for release"
+run = "./scripts/tasks/workspace/bundle.sh"
+
+[plugins]
+tuist = "https://github.com/asdf-community/asdf-tuist"
+swift = "https://github.com/fcrespo82/asdf-swift"
+macker = "https://github.com/tuist/asdf-macker"
