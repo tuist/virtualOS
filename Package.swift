@@ -3,6 +3,14 @@
 
 import PackageDescription
 
+#if TUIST
+import ProjectDescription
+
+let packageSettings = PackageSettings(baseSettings: .settings(base: [
+    "SWIFT_STRICT_CONCURRENCY": "complete"
+]))
+#endif
+
 let package = Package(
     name: "virtualOS",
     dependencies: [
