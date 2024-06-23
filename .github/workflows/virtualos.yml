@@ -1,0 +1,71 @@
+name: VirtualOS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+concurrency:
+  group: virtualos-${{ github.head_ref }}
+  cancel-in-progress: true
+
+env:
+  TUIST_CONFIG_CLOUD_TOKEN: ${{ secrets.TUIST_CONFIG_CLOUD_TOKEN }}
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: "macos-13"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_$(cat .xcode-version).app
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - name: Run
+        run: |
+          mise x -- tuist install
+          mise run build
+
+  test:
+    name: "Test"
+    runs-on: "macos-13"
+    env:
+      TUIST_CONFIG_CLOUD_TOKEN: ${{ secrets.TUIST_CONFIG_CLOUD_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_$(cat .xcode-version).app
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - name: Run
+        run: |
+          mise x -- tuist install
+          mise run test
+
+  lint:
+    name: Lint
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - name: Run
+        run: mise run lint
+
+  cache:
+    name: Cache
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - name: Run
+        run: |
+          mise x -- tuist install
+          mise run cache
