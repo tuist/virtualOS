@@ -6,10 +6,6 @@
 "npm:wrangler" = "3.28.4"
 "node" = "20.11.1"
 
-[tasks."build"]
-description = "Builds the package using Tuist"
-run = "./scripts/tasks/workspace/build.sh"
-
 [tasks."cache"]
 description = "Warms the Tuist cache"
 run = "./scripts/tasks/workspace/cache.sh"
