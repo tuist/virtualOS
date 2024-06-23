@@ -1,6 +1,6 @@
 <img src="assets/header.svg"/>
 
-virtualOS is an MIT-licensed and OCI-compliant virtualization tool for macOS environments.
+virtualOS is an Apache-2.0-licensed and OCI-compliant virtualization tool for macOS environments.
 It builds on Apple's powerful [Virtualization](https://developer.apple.com/documentation/virtualization) framework.
 
 
