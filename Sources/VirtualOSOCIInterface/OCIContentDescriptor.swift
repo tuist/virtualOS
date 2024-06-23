@@ -2,7 +2,7 @@ import Foundation
 
 /// Content descriptors, or simply descriptors, declare references between the components
 /// in the Merkle Directed Acyclic Graph (DAG).
-public struct OCIContentDescriptor {
+public struct OCIContentDescriptor: Codable {
     /// Describes the media type of the referenced content.
     /// The value must complain with [RFC6838](https://tools.ietf.org/html/rfc6838)
     public var mediaType: String
