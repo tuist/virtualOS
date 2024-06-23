@@ -3,16 +3,6 @@
 "swiftlint" = "0.54.0"
 "swiftformat" = "0.52.10"
 "swift" = "5.9.2"
-"npm:wrangler" = "3.28.4"
-"node" = "20.11.1"
-
-[tasks."cache"]
-description = "Warms the Tuist cache"
-run = "./scripts/tasks/workspace/cache.sh"
-
-[tasks."test"]
-description = "Tests the package using the Tuist"
-run = "./scripts/tasks/workspace/test.sh"
 
 [tasks."lint"]
 description = "Lints the codebase"
