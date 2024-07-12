@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "virtualOS"
-  text: "A virtualization CLI for macOS environments"
-  tagline: My great project tagline
+  text: "Virtualized macOS"
+  tagline: Powered by Virtualization.framework
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,11 +15,11 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: OCI-Compliant
+    details: Designed to be compliant with the Open Container Initiative (OCI) standards.
+  - title: Docker-aligned
+    details: We respect the Docker CLI for familiarity and ease of use.
+  - title: Permissive License
+    details: MIT licensed, so you can use it in your commercial projects.
 ---
 

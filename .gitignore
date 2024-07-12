@@ -16,3 +16,4 @@ Derived/
 build/
 
 node_modules/
+docs/.vitepress/cache/
