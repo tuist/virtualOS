@@ -16,10 +16,10 @@ With the [Virtualization](https://developer.apple.com/documentation/virtualizati
 ### Using Tuist
 
 1. Clone the repository: `git clone https://github.com/tuist/virtualOS.git`
+2. Install system dependencies: `mise install`
+3. Install project dependencies: `mise run install`
 2. Generate the project: `tuist generate`
 
+### Principles
 
-### Using Swift Package Manager
-
-1. Clone the repository: `git clone https://github.com/tuist/virtualOS.git`
-2. Open the `Package.swift` with Xcode
+- **Docker-like API**: We aim to provide a CLI interface that resembles Docker's API to make it easier for developers to use the tool.

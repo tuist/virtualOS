@@ -1,0 +1,5 @@
+#!/bin/bash
+# mise description="Tests the package using the Tuist"
+set -euo pipefail
+
+tuist test --path $MISE_PROJECT_ROOT
