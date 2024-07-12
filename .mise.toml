@@ -5,6 +5,7 @@
 "swift" = "5.9.2"
 "node" = "20.11.1"
 "pnpm" = "9.5.0"
+"dagger" = "0.12.0"
 
 [plugins]
 tuist = "https://github.com/asdf-community/asdf-tuist"
