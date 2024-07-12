@@ -20,6 +20,6 @@ features:
   - title: Docker-aligned
     details: We respect the Docker CLI for familiarity and ease of use.
   - title: Permissive License
-    details: MIT licensed, so you can use it in your commercial projects.
+    details: Apache 2.0 licensed, so you can use it in your commercial projects.
 ---
 
