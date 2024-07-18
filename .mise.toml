@@ -3,26 +3,9 @@
 "swiftlint" = "0.54.0"
 "swiftformat" = "0.52.10"
 "swift" = "5.9.2"
-
-[tasks."lint"]
-description = "Lints the codebase"
-run = "./scripts/tasks/workspace/lint.sh"
-
-[tasks."lint:fix"]
-description = "Lints the codebase fixing the fixable issues"
-run = "./scripts/tasks/workspace/lint-fix.sh"
-
-[tasks."preview:docs"]
-description = "Previews the documentation"
-run = "./scripts/tasks/workspace/docs-preview.sh"
-
-[tasks."build:docs"]
-description = "Builds the documentation"
-run = "./scripts/tasks/workspace/docs-build.sh"
-
-[tasks."bundle"]
-description = "Bundles virtualos for release"
-run = "./scripts/tasks/workspace/bundle.sh"
+"node" = "20.11.1"
+"pnpm" = "9.5.0"
+"dagger" = "0.12.0"
 
 [plugins]
 tuist = "https://github.com/asdf-community/asdf-tuist"

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mise description="Installs the project dependencies"
+
+set -euo pipefail
+
+pnpm install -C $MISE_PROJECT_ROOT/docs
