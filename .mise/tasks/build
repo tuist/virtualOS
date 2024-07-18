@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mise description="Builds the package using Tuist"
+
+set -euo pipefail
+
+tuist build --path $MISE_PROJECT_ROOT

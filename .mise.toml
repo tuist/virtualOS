@@ -1,0 +1,13 @@
+[tools]
+"tuist" = "4.21.1"
+"swiftlint" = "0.54.0"
+"swiftformat" = "0.52.10"
+"swift" = "5.9.2"
+"node" = "20.11.1"
+"pnpm" = "9.5.0"
+"git-cliff" = "2.4.0"
+
+[plugins]
+tuist = "https://github.com/asdf-community/asdf-tuist"
+swift = "https://github.com/fcrespo82/asdf-swift"
+virtualos = "https://github.com/tuist/asdf-virtualos"
