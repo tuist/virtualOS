@@ -3,7 +3,7 @@
 "swiftlint" = "0.54.0"
 "swiftformat" = "0.52.10"
 "swift" = "5.9.2"
-"node" = "20.11.1"
+"node" = "20.15.1"
 "pnpm" = "9.5.0"
 "dagger" = "0.12.0"
 
