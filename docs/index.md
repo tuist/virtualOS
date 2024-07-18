@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "virtualOS"
   text: "Virtualized macOS"
-  tagline: Powered by Virtualization.framework
+  tagline: Powered by Apple's Virtualization framework
   actions:
     - theme: brand
       text: Markdown Examples
