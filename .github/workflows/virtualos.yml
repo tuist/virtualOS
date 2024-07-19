@@ -12,6 +12,7 @@ concurrency:
 
 env:
   TUIST_CONFIG_TOKEN: ${{ secrets.TUIST_CONFIG_TOKEN }}
+  CI: "1"
 
 jobs:
   build:
