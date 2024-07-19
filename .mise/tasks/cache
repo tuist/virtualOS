@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mise description="Warms the Tuist cache"
+
+set -euo pipefail
+
+tuist cache --path $MISE_PROJECT_ROOT

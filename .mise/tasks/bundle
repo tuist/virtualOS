@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Bundles the CLI for distribution"
+
+set -euo pipefail
+
+tuist generate --path $MISE_PROJECT_ROOT --no-open
+
+xcodebuild -workspace $MISE_PROJECT_ROOT/virtualOS.xcworkspace \
+  -scheme virtualos \
+  -configuration Release \
+  -destination generic/platform=macOS \
+  clean build

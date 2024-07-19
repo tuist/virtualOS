@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# mise description="Deploy the website"
+
+pnpm run -C $MISE_PROJECT_ROOT/docs deploy
