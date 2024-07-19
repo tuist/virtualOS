@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mise description="Encrypts the certificate"
+
+set -euo pipefail
+
+openssl enc -aes-256-cbc -salt -pbkdf2 -in $MISE_PROJECT_ROOT/certificates/certificate.p12 -out $MISE_PROJECT_ROOT/certificates/certificate.p12.enc -pass pass:"$CERTIFICATE_ENCRYPTION_PASSWORD"

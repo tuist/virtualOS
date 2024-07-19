@@ -28,6 +28,26 @@ jobs:
           mise run install
           mise run build
 
+  bundle:
+    name: "Bundle"
+    runs-on: "macos-13"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_$(cat .xcode-version).app
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - name: Run
+        env:
+          CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APP_SPECIFIC_PASSWORD: ${{ secrets.APP_SPECIFIC_PASSWORD }}
+          CERTIFICATE_ENCRYPTION_PASSWORD: ${{ secrets.CERTIFICATE_ENCRYPTION_PASSWORD }}
+        run: |
+          mise run install
+          mise run bundle
+
   test:
     name: "Test"
     runs-on: "macos-13"
