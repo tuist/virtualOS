@@ -3,4 +3,5 @@
 
 set -euo pipefail
 
+tuist install --path $MISE_PROJECT_ROOT
 pnpm install -C $MISE_PROJECT_ROOT/docs

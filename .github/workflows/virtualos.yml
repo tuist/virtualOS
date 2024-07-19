@@ -27,7 +27,7 @@ jobs:
           experimental: true
       - name: Run
         run: |
-          mise x -- tuist install
+          mise run install
           mise run build
 
   test:
@@ -42,7 +42,7 @@ jobs:
           experimental: true
       - name: Run
         run: |
-          mise x -- tuist install
+          mise run install
           mise run test
 
   lint:
@@ -66,5 +66,5 @@ jobs:
           experimental: true
       - name: Run
         run: |
-          mise x -- tuist install
+          mise run install
           mise run cache
