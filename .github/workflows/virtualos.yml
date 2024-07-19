@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  TUIST_CONFIG_CLOUD_TOKEN: ${{ secrets.TUIST_CONFIG_CLOUD_TOKEN }}
+  TUIST_CONFIG_TOKEN: ${{ secrets.TUIST_CONFIG_TOKEN }}
 
 jobs:
   build:
