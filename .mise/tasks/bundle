@@ -39,8 +39,9 @@ tuist build --clean --path $MISE_PROJECT_ROOT virtualos -- -configuration Releas
 # Codesign
 print_status "Code signing virtualos..."
 security create-keychain -p $KEYCHAIN_PASSWORD $TMP_KEYCHAIN_PATH
-security import $CERTIFICATE_PATH -k $TMP_KEYCHAIN_PATH -P $CERTIFICATE_PASSWORD -A
-codesign --force --options runtime --sign "Developer ID Application: Tuist GmbH (U6LC622NKF)" --keychain $TMP_KEYCHAIN_PATH $BUILD_DIRECTORY_BINARY
+security default-keychain -s $TMP_KEYCHAIN_PATH
+security import $CERTIFICATE_PATH -P $CERTIFICATE_PASSWORD -A
+codesign --force --options runtime --sign "Developer ID Application: Tuist GmbH (U6LC622NKF)" $BUILD_DIRECTORY_BINARY
 
 # Notarize
 print_status "Submitting virtualos for notarization..."
