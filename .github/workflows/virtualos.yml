@@ -40,6 +40,7 @@ jobs:
           APPLE_ID: ${{ secrets.APPLE_ID }}
           APP_SPECIFIC_PASSWORD: ${{ secrets.APP_SPECIFIC_PASSWORD }}
           CERTIFICATE_ENCRYPTION_PASSWORD: ${{ secrets.CERTIFICATE_ENCRYPTION_PASSWORD }}
+          TUIST_CONFIG_TOKEN: ${{ secrets.TUIST_CONFIG_TOKEN }}
         run: |
           mise run install
           mise run bundle
