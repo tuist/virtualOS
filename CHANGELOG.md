@@ -1,4 +1,6 @@
 ## What's Changed in 0.1.1
+* Read the right value by @pepicrft
+* release by @pepicrft
 * Auto generate release notes by @pepicrft
 * release by @pepicrft
 
