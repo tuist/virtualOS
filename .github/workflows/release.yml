@@ -34,8 +34,10 @@ jobs:
       - name: Get next version
         if: "!startsWith(github.event.head_commit.message, 'release')"
         id: version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "VERSION=$(git cliff --bumped-version --github-token ${{ secrets.GITHUB_TOKEN }})" >> $GITHUB_ENV
+          echo "VERSION=$(git cliff --bumped-version)" >> $GITHUB_ENV
       - name: Generate changelog
         if: "!startsWith(github.event.head_commit.message, 'release')"
         id: changelog
@@ -44,8 +46,10 @@ jobs:
       - name: Generate release notes
         if: "!startsWith(github.event.head_commit.message, 'release')"
         id: release-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "RELEASE_NOTES=$(git cliff --latest --github-token ${{ secrets.GITHUB_TOKEN }})" >> $GITHUB_ENV
+          echo "RELEASE_NOTES=$(git cliff --latest)" >> $GITHUB_ENV
       - uses: stefanzweifel/git-auto-commit-action@v5
         if: "!startsWith(github.event.head_commit.message, 'release')"
         with:
