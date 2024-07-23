@@ -19,11 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
       - run: mise run install
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
       - name: bundle
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
         env:
           CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
           APPLE_ID: ${{ secrets.APPLE_ID }}
@@ -32,27 +32,27 @@ jobs:
           TUIST_CONFIG_TOKEN: ${{ secrets.TUIST_CONFIG_TOKEN }}
         run: mise run bundle
       - name: Get next version
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
         id: version
         run: |
           echo "VERSION=$(git cliff --bumped-version)" >> $GITHUB_ENV
       - name: Generate changelog
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
         id: changelog
         run: |
           git-cliff --bump -o CHANGELOG.md
       - name: Generate release notes
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
         id: release-notes
         run: |
           echo "RELEASE_NOTES=$(git cliff --latest)" >> $GITHUB_ENV
       - uses: stefanzweifel/git-auto-commit-action@v5
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
         with:
           commit_message: release ${{ steps.version.outputs.VERSION }}
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: "!contains(github.event.head_commit.message, 'release')"
+        if: "!startsWith(github.event.head_commit.message, 'release')"
         with:
           body: ${{ steps.release-notes.outputs.RELEASE_NOTES }}
           draft: false
