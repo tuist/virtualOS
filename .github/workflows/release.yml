@@ -40,7 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "VERSION=$(git cliff --bumped-version)" >> $GITHUB_ENV
+          echo "VERSION=$(git-cliff --bumped-version)" >> $GITHUB_ENV
       - name: Generate changelog
         if: "!startsWith(github.event.head_commit.message, 'release')"
         id: changelog
@@ -54,7 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "RELEASE_NOTES=$(git cliff --unreleased)" >> $GITHUB_ENV
+          echo "RELEASE_NOTES=$(git-cliff --unreleased)" >> $GITHUB_ENV
       - uses: stefanzweifel/git-auto-commit-action@v5
         if: "!startsWith(github.event.head_commit.message, 'release')"
         with:
