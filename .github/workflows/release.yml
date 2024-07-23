@@ -18,6 +18,8 @@ jobs:
     runs-on: "macos-13"
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
       - uses: jdx/mise-action@v2
         if: "!startsWith(github.event.head_commit.message, 'release')"
       - run: mise run install
