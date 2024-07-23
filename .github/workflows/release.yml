@@ -58,15 +58,14 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         if: "!startsWith(github.event.head_commit.message, 'release')"
         with:
-          commit_message: release ${{ steps.version.outputs.VERSION }}
+          commit_message: release ${{ env.VERSION }}
       - name: Release
         uses: softprops/action-gh-release@v2
         if: "!startsWith(github.event.head_commit.message, 'release')"
         with:
-          body: ${{ steps.release-notes.outputs.RELEASE_NOTES }}
           draft: false
-          name: ${{ steps.version.outputs.VERSION }}
-          tag_name: ${{ steps.version.outputs.VERSION }}
+          name: ${{ env.VERSION }}
+          tag_name: ${{ env.VERSION }}
           make_latest: true
           generate_release_notes: true
           files: |
