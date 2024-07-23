@@ -1,10 +1,9 @@
 # git-cliff ~ configuration file
 # https://git-cliff.org/docs/configuration
 
-# [remote.github]
-# owner = "orhun"
-# repo = "git-cliff"
-# token = ""
+[remote.github]
+owner = "tuist"
+repo = "virtualOS"
 
 [changelog]
 # template for the changelog body
