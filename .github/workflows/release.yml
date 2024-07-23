@@ -1,0 +1,78 @@
+name: VirtualOS
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: release-${{ github.head_ref }}
+  cancel-in-progress: true
+
+env:
+  MISE_EXPERIMENTAL: "1"
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: "macos-13"
+    steps:
+      - uses: actions/checkout@v4
+      - id: skip_release
+        run: |
+          # Get the commit message of the latest commit
+          commit_message=$(git log -1 --pretty=format:%s)
+          echo "Commit message: $commit_message"
+          # Check if the commit message starts with 'release'
+          if [[ "$commit_message" == release* ]]; then
+            echo "SKIP_RELEASE=true" >> $GITHUB_ENV
+          else
+            echo "SKIP_RELEASE=false" >> $GITHUB_ENV
+          fi
+      - uses: jdx/mise-action@v2
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+      - run: mise run install
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+      - name: bundle
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+        env:
+          CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APP_SPECIFIC_PASSWORD: ${{ secrets.APP_SPECIFIC_PASSWORD }}
+          CERTIFICATE_ENCRYPTION_PASSWORD: ${{ secrets.CERTIFICATE_ENCRYPTION_PASSWORD }}
+          TUIST_CONFIG_TOKEN: ${{ secrets.TUIST_CONFIG_TOKEN }}
+        run: mise run bundle
+      - name: Get next version
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+        id: version
+        run: |
+          echo "VERSION=$(git cliff --bumped-version)" >> $GITHUB_ENV
+      - name: Generate changelog
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+        id: changelog
+        run: |
+          git-cliff --bump -o CHANGELOG.md
+      - name: Generate release notes
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+        id: release-notes
+        run: |
+          echo "RELEASE_NOTES=$(git cliff --latest)" >> $GITHUB_ENV
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+        with:
+          commit_message: release ${{ steps.version.outputs.VERSION }}
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: steps.skip_release.outputs.SKIP_RELEASE == 'false'
+        with:
+          body: ${{ steps.release-notes.outputs.RELEASE_NOTES }}
+          draft: false
+          name: ${{ steps.version.outputs.VERSION }}
+          tag_name: ${{ steps.version.outputs.VERSION }}
+          make_latest: true
+          files: |
+            build/artifacts/virtualos.zip
+            build/artifacts/SHASUMS256.txt
+            build/artifacts/SHASUMS512.txt
+
+
