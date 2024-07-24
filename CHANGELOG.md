@@ -1,4 +1,10 @@
+## What's Changed in 0.1.3
+* Update dependency node to v20.16.0 by @renovate[bot] in [#21](https://github.com/tuist/virtualOS/pull/21)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.2...0.1.3
+
 ## What's Changed in 0.1.2
+* release 0.1.2 by @renovate[bot]
 * Update dependency wrangler to v3.66.0 by @renovate[bot] in [#20](https://github.com/tuist/virtualOS/pull/20)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.1...0.1.2
