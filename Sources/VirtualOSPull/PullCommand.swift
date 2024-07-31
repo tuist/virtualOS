@@ -9,10 +9,10 @@ public struct PullCommand: AsyncParsableCommand {
         commandName: "pull",
         abstract: "Pulls an image from the registry"
     )
-    
+
     @Flag(help: "Suppress verbose output.")
     var insecure: Bool = false
-    
+
     @Argument(help: "The identifier of the image to pull")
     var image: String
 

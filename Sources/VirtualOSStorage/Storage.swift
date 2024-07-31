@@ -1,13 +1,12 @@
-import VirtualOSStorageInterface
 import Path
+import VirtualOSStorageInterface
 
 struct Storage: Storaging {
-    func images(cacheDirectory: AbsolutePath) async throws -> [VirtualOSStorageInterface.Image] {
-        return []
+    func images(cacheDirectory _: AbsolutePath) async throws -> [VirtualOSStorageInterface.Image] {
+        []
     }
-    
+
     private func imagesDirectory(cacheDirectory: AbsolutePath) -> AbsolutePath {
-        return cacheDirectory.appending(component: "images")
+        cacheDirectory.appending(component: "images")
     }
-    
 }

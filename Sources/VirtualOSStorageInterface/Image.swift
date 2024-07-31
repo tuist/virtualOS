@@ -1,5 +1,3 @@
 import Foundation
 
-public struct Image {
-    
-}
+public struct Image {}
