@@ -1,4 +1,10 @@
+## What's Changed in 0.1.9
+* Update dependency Kolos65/Mockable to from: "0.0.10" by @renovate[bot] in [#28](https://github.com/tuist/virtualOS/pull/28)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.8...0.1.9
+
 ## What's Changed in 0.1.8
+* release 0.1.8 by @renovate[bot]
 * Update dependency wrangler to v3.68.0 by @renovate[bot] in [#27](https://github.com/tuist/virtualOS/pull/27)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.7...0.1.8
