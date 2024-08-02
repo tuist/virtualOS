@@ -14,7 +14,7 @@ import PackageDescription
 let package = Package(
     name: "virtualOS",
     dependencies: [
-        .package(url: "https://github.com/Kolos65/Mockable", .upToNextMajor(from: "0.0.9")),
+        .package(url: "https://github.com/Kolos65/Mockable", .upToNextMajor(from: "0.0.10")),
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMajor(from: "1.5.0")),
     ]
 )
