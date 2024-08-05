@@ -1,4 +1,10 @@
+## What's Changed in 0.1.11
+* Update dependency tuist to v4.23.0 by @renovate[bot] in [#30](https://github.com/tuist/virtualOS/pull/30)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.10...0.1.11
+
 ## What's Changed in 0.1.10
+* release 0.1.10 by @renovate[bot]
 * Lock file maintenance by @renovate[bot] in [#29](https://github.com/tuist/virtualOS/pull/29)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.9...0.1.10
