@@ -1,4 +1,10 @@
+## What's Changed in 0.1.12
+* Update dependency vitepress to v1.3.2 by @renovate[bot] in [#31](https://github.com/tuist/virtualOS/pull/31)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.11...0.1.12
+
 ## What's Changed in 0.1.11
+* release 0.1.11 by @renovate[bot]
 * Update dependency tuist to v4.23.0 by @renovate[bot] in [#30](https://github.com/tuist/virtualOS/pull/30)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.10...0.1.11
