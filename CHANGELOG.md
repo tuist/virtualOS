@@ -1,4 +1,10 @@
+## What's Changed in 0.1.10
+* Lock file maintenance by @renovate[bot] in [#29](https://github.com/tuist/virtualOS/pull/29)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.9...0.1.10
+
 ## What's Changed in 0.1.9
+* release 0.1.9 by @renovate[bot]
 * Update dependency Kolos65/Mockable to from: "0.0.10" by @renovate[bot] in [#28](https://github.com/tuist/virtualOS/pull/28)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.8...0.1.9
