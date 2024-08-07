@@ -4,7 +4,7 @@
 "swiftformat" = "0.52.10"
 "swift" = "5.9.2"
 "node" = "20.16.0"
-"pnpm" = "9.6.0"
+"pnpm" = "9.7.0"
 "git-cliff" = "2.4.0"
 
 [plugins]
