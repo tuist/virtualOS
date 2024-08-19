@@ -1,4 +1,10 @@
+## What's Changed in 0.1.21
+* Lock file maintenance by @renovate[bot] in [#40](https://github.com/tuist/virtualOS/pull/40)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.20...0.1.21
+
 ## What's Changed in 0.1.20
+* release 0.1.20 by @renovate[bot]
 * Update dependency vitepress to v1.3.3 by @renovate[bot] in [#39](https://github.com/tuist/virtualOS/pull/39)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.19...0.1.20
