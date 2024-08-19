@@ -1,4 +1,10 @@
+## What's Changed in 0.1.22
+* Lock file maintenance by @renovate[bot] in [#41](https://github.com/tuist/virtualOS/pull/41)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.21...0.1.22
+
 ## What's Changed in 0.1.21
+* release 0.1.21 by @renovate[bot]
 * Lock file maintenance by @renovate[bot] in [#40](https://github.com/tuist/virtualOS/pull/40)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.20...0.1.21
