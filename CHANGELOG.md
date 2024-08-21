@@ -1,4 +1,10 @@
+## What's Changed in 0.1.25
+* Update dependency node to v20.17.0 by @renovate[bot] in [#44](https://github.com/tuist/virtualOS/pull/44)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.24...0.1.25
+
 ## What's Changed in 0.1.24
+* release 0.1.24 by @renovate[bot]
 * Update dependency wrangler to v3.72.1 by @renovate[bot] in [#43](https://github.com/tuist/virtualOS/pull/43)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.23...0.1.24
