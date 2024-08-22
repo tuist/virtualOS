@@ -1,4 +1,10 @@
+## What's Changed in 0.1.26
+* Update dependency pnpm to v9.8.0 by @renovate[bot] in [#45](https://github.com/tuist/virtualOS/pull/45)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.25...0.1.26
+
 ## What's Changed in 0.1.25
+* release 0.1.25 by @renovate[bot]
 * Update dependency node to v20.17.0 by @renovate[bot] in [#44](https://github.com/tuist/virtualOS/pull/44)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.24...0.1.25
