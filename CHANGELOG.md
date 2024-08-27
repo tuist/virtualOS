@@ -1,4 +1,10 @@
+## What's Changed in 0.1.31
+* Update dependency tuist to v4.25.0 by @renovate[bot] in [#50](https://github.com/tuist/virtualOS/pull/50)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.30...0.1.31
+
 ## What's Changed in 0.1.30
+* release 0.1.30 by @renovate[bot]
 * Update dependency pnpm to v9.9.0 by @renovate[bot] in [#49](https://github.com/tuist/virtualOS/pull/49)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.29...0.1.30
