@@ -1,4 +1,10 @@
+## What's Changed in 0.1.51
+* Update dependency wrangler to v3.78.7 by @renovate[bot] in [#70](https://github.com/tuist/virtualOS/pull/70)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.50...0.1.51
+
 ## What's Changed in 0.1.50
+* release 0.1.50 by @renovate[bot]
 * Update dependency pnpm to v9.11.0 by @renovate[bot] in [#69](https://github.com/tuist/virtualOS/pull/69)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.49...0.1.50
