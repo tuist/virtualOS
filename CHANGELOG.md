@@ -1,4 +1,11 @@
+## What's Changed in 0.1.57
+* Update dependency wrangler to v3.78.11 by @renovate[bot] in [#77](https://github.com/tuist/virtualOS/pull/77)
+* Update dependency tuist to v4.28.1 by @renovate[bot] in [#76](https://github.com/tuist/virtualOS/pull/76)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.56...0.1.57
+
 ## What's Changed in 0.1.56
+* release 0.1.56 by @renovate[bot]
 * Update dependency wrangler to v3.78.10 by @renovate[bot] in [#75](https://github.com/tuist/virtualOS/pull/75)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.55...0.1.56
