@@ -1,4 +1,10 @@
+## What's Changed in 0.1.63
+* Update actions/checkout digest to eef6144 by @renovate[bot] in [#89](https://github.com/tuist/virtualOS/pull/89)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.62...0.1.63
+
 ## What's Changed in 0.1.62
+* release 0.1.62 by @renovate[bot]
 * Update dependency wrangler to v3.80.5 by @renovate[bot] in [#85](https://github.com/tuist/virtualOS/pull/85)
 * Implement `virtualos` pull command by @pepicrft in [#26](https://github.com/tuist/virtualOS/pull/26)
 * Lint the code changes by @pepicrft
