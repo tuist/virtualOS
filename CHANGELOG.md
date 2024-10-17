@@ -1,4 +1,13 @@
+## What's Changed in 0.1.62
+* Update dependency wrangler to v3.80.5 by @renovate[bot] in [#85](https://github.com/tuist/virtualOS/pull/85)
+* Implement `virtualos` pull command by @pepicrft in [#26](https://github.com/tuist/virtualOS/pull/26)
+* Lint the code changes by @pepicrft
+* Start working on the pull command by @pepicrft
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.61...0.1.62
+
 ## What's Changed in 0.1.61
+* release 0.1.61 by @renovate[bot]
 * Update dependency pnpm to v9.12.0 by @renovate[bot] in [#82](https://github.com/tuist/virtualOS/pull/82)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.60...0.1.61
