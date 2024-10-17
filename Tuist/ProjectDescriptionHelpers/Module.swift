@@ -50,12 +50,16 @@ public enum Module: CaseIterable {
             ]
         case .pull: return [
                 .external(name: "ArgumentParser"),
+                .external(name: "Path"),
             ]
         case .run: return [
                 .external(name: "ArgumentParser"),
+                .external(name: "Path"),
             ]
         case .network, .oci, .storage:
-            return []
+            return [
+                .external(name: "Path"),
+            ]
         }
     }
 
