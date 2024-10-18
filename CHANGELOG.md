@@ -1,4 +1,10 @@
+## What's Changed in 0.1.66
+* Update dependency node to v20.18.0 by @renovate[bot] in [#84](https://github.com/tuist/virtualOS/pull/84)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.65...0.1.66
+
 ## What's Changed in 0.1.65
+* release 0.1.65 by @renovate[bot]
 * Update dependency tuist/path to from: "0.3.8" by @renovate[bot] in [#90](https://github.com/tuist/virtualOS/pull/90)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.64...0.1.65
