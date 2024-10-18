@@ -1,4 +1,10 @@
+## What's Changed in 0.1.64
+* Update dependency pnpm to v9.12.2 by @renovate[bot] in [#88](https://github.com/tuist/virtualOS/pull/88)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.63...0.1.64
+
 ## What's Changed in 0.1.63
+* release 0.1.63 by @renovate[bot]
 * Update actions/checkout digest to eef6144 by @renovate[bot] in [#89](https://github.com/tuist/virtualOS/pull/89)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.62...0.1.63
