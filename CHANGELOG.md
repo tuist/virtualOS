@@ -1,4 +1,10 @@
+## What's Changed in 0.1.65
+* Update dependency tuist/path to from: "0.3.8" by @renovate[bot] in [#90](https://github.com/tuist/virtualOS/pull/90)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.64...0.1.65
+
 ## What's Changed in 0.1.64
+* release 0.1.64 by @renovate[bot]
 * Update dependency pnpm to v9.12.2 by @renovate[bot] in [#88](https://github.com/tuist/virtualOS/pull/88)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.63...0.1.64
