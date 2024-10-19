@@ -1,4 +1,10 @@
+## What's Changed in 0.1.69
+* Update dependency wrangler to v3.81.0 by @renovate[bot] in [#91](https://github.com/tuist/virtualOS/pull/91)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.68...0.1.69
+
 ## What's Changed in 0.1.68
+* release 0.1.68 by @renovate[bot]
 * Update dependency vitepress to v1.4.1 by @renovate[bot] in [#87](https://github.com/tuist/virtualOS/pull/87)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.67...0.1.68
