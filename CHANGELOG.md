@@ -1,4 +1,10 @@
+## What's Changed in 0.1.72
+* Update actions/checkout digest to 11bd719 by @renovate[bot] in [#94](https://github.com/tuist/virtualOS/pull/94)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.71...0.1.72
+
 ## What's Changed in 0.1.71
+* release 0.1.71 by @renovate[bot]
 * Update dependency tuist to v4.31.0 by @renovate[bot] in [#93](https://github.com/tuist/virtualOS/pull/93)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.70...0.1.71
