@@ -1,4 +1,10 @@
+## What's Changed in 0.1.73
+* Update dependency wrangler to v3.83.0 by @renovate[bot] in [#95](https://github.com/tuist/virtualOS/pull/95)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.72...0.1.73
+
 ## What's Changed in 0.1.72
+* release 0.1.72 by @renovate[bot]
 * Update actions/checkout digest to 11bd719 by @renovate[bot] in [#94](https://github.com/tuist/virtualOS/pull/94)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.71...0.1.72
