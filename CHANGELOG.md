@@ -1,4 +1,10 @@
+## What's Changed in 0.1.76
+* Update dependency vitepress to v1.4.2 by @renovate[bot] in [#98](https://github.com/tuist/virtualOS/pull/98)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.75...0.1.76
+
 ## What's Changed in 0.1.75
+* release 0.1.75 by @renovate[bot]
 * Update dependency pnpm to v9.12.3 by @renovate[bot] in [#97](https://github.com/tuist/virtualOS/pull/97)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.74...0.1.75
