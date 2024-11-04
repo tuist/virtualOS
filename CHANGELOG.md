@@ -1,4 +1,10 @@
+## What's Changed in 0.1.82
+* Update dependency vitepress to v1.5.0 by @renovate[bot] in [#106](https://github.com/tuist/virtualOS/pull/106)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.81...0.1.82
+
 ## What's Changed in 0.1.81
+* release 0.1.81 by @renovate[bot]
 * Lock file maintenance by @renovate[bot] in [#105](https://github.com/tuist/virtualOS/pull/105)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.80...0.1.81
