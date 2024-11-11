@@ -1,4 +1,10 @@
+## What's Changed in 0.1.85
+* Lock file maintenance by @renovate[bot] in [#109](https://github.com/tuist/virtualOS/pull/109)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.84...0.1.85
+
 ## What's Changed in 0.1.84
+* release 0.1.84 by @renovate[bot]
 * Update dependency wrangler to v3.86.0 by @renovate[bot] in [#108](https://github.com/tuist/virtualOS/pull/108)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.83...0.1.84
