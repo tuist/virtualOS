@@ -1,4 +1,10 @@
+## What's Changed in 0.1.93
+* Update dependency pnpm to v9.14.2 by @renovate[bot] in [#112](https://github.com/tuist/virtualOS/pull/112)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.92...0.1.93
+
 ## What's Changed in 0.1.92
+* release 0.1.92 by @renovate[bot]
 * Update dependency node to v20.18.1 by @renovate[bot] in [#116](https://github.com/tuist/virtualOS/pull/116)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.91...0.1.92
