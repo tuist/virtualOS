@@ -1,4 +1,10 @@
+## What's Changed in 0.1.92
+* Update dependency node to v20.18.1 by @renovate[bot] in [#116](https://github.com/tuist/virtualOS/pull/116)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.91...0.1.92
+
 ## What's Changed in 0.1.91
+* release 0.1.91 by @renovate[bot]
 * Update dependency wrangler to v3.89.0 by @renovate[bot] in [#117](https://github.com/tuist/virtualOS/pull/117)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.90...0.1.91
