@@ -1,4 +1,10 @@
+## What's Changed in 0.1.96
+* Update dependency wrangler to v3.91.0 by @renovate[bot] in [#120](https://github.com/tuist/virtualOS/pull/120)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.95...0.1.96
+
 ## What's Changed in 0.1.95
+* release 0.1.95 by @renovate[bot]
 * Lock file maintenance by @renovate[bot] in [#119](https://github.com/tuist/virtualOS/pull/119)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.94...0.1.95
