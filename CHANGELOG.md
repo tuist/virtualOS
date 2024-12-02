@@ -1,4 +1,10 @@
+## What's Changed in 0.1.98
+* Update dependency pnpm to v9.14.4 by @renovate[bot] in [#121](https://github.com/tuist/virtualOS/pull/121)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.97...0.1.98
+
 ## What's Changed in 0.1.97
+* release 0.1.97 by @renovate[bot]
 * Lock file maintenance by @renovate[bot] in [#122](https://github.com/tuist/virtualOS/pull/122)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.96...0.1.97
