@@ -1,4 +1,10 @@
+## What's Changed in 0.1.107
+* Update dependency wrangler to v3.97.0 by @renovate[bot] in [#131](https://github.com/tuist/virtualOS/pull/131)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.106...0.1.107
+
 ## What's Changed in 0.1.106
+* release 0.1.106 by @renovate[bot]
 * Update dependency wrangler to v3.96.0 by @renovate[bot] in [#130](https://github.com/tuist/virtualOS/pull/130)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.105...0.1.106
