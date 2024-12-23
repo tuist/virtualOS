@@ -1,4 +1,11 @@
+## What's Changed in 0.1.110
+* Lock file maintenance by @renovate[bot] in [#135](https://github.com/tuist/virtualOS/pull/135)
+* Update dependency pnpm to v9.15.1 by @renovate[bot] in [#134](https://github.com/tuist/virtualOS/pull/134)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.109...0.1.110
+
 ## What's Changed in 0.1.109
+* release 0.1.109 by @renovate[bot]
 * Update dependency wrangler to v3.99.0 by @renovate[bot] in [#133](https://github.com/tuist/virtualOS/pull/133)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.108...0.1.109
