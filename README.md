@@ -31,4 +31,4 @@ Alternatively, you can [download the binary from the releases page](https://gith
 
 ## Documentation
 
-The documentation is available at [https://virtualos.tuist.io](https://virtualos.tuist.io).
+The documentation is available at [https://virtualos.tuist.dev](https://virtualos.tuist.dev).
