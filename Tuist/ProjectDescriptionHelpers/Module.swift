@@ -131,7 +131,7 @@ public enum Module: CaseIterable {
                 bundleId: bundleId,
                 deploymentTargets: .macOS("13.0.0"),
                 sources: testSources(targetName: targetName),
-                dependencies: dependencies + [.xctest, .target(name: targetName), .external(name: "MockableTest")]
+                dependencies: dependencies + [.xctest, .target(name: targetName)]
             ))
         }
         return targets
