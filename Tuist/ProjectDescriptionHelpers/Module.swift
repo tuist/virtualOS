@@ -7,6 +7,8 @@ public enum Module: CaseIterable {
     case network
     case oci
     case storage
+    case environment
+    case logging
 
     public var targetName: String {
         switch self {
@@ -16,6 +18,8 @@ public enum Module: CaseIterable {
         case .network: "VirtualOSNetwork"
         case .oci: "VirtualOSOCI"
         case .storage: "VirtualOSStorage"
+        case .environment: "VirtualOSEnvironment"
+        case .logging: "VirtualOSLogging"
         }
     }
 
@@ -23,7 +27,7 @@ public enum Module: CaseIterable {
         switch self {
         case .virtualos:
             return .commandLineTool
-        case .pull, .run, .network, .oci, .storage:
+        case .pull, .run, .network, .oci, .storage, .environment, .logging:
             return .staticLibrary
         }
     }
@@ -34,7 +38,7 @@ public enum Module: CaseIterable {
 
     public var interfaceTargetName: String? {
         switch self {
-        case .virtualos:
+        case .virtualos, .environment, .logging:
             return nil
         case .pull, .run, .network, .oci, .storage:
             return "\(targetName)Interface"
@@ -60,6 +64,19 @@ public enum Module: CaseIterable {
             return [
                 .external(name: "Path"),
             ]
+        case .environment:
+            return [
+                .external(name: "Path"),
+                .external(name: "ServiceContextModule"),
+            ]
+        case .logging:
+            return [
+                .external(name: "ServiceContextModule"),
+                .external(name: "Logging"),
+                .external(name: "LoggingOSLog"),
+                .external(name: "FileLogging"),
+                .external(name: "Path"),
+            ]
         }
     }
 
@@ -79,12 +96,12 @@ public enum Module: CaseIterable {
         ]
     }
 
-    var hasTests: Bool {
+    var testsTargetName: String? {
         switch self {
         case .virtualos:
-            return false
-        case .pull, .run, .oci, .storage, .network:
-            return true
+            return nil
+        case .pull, .run, .oci, .storage, .network, .environment, .logging:
+            return "\(targetName)Tests"
         }
     }
 
@@ -123,9 +140,9 @@ public enum Module: CaseIterable {
             ])
         ))
 
-        if hasTests {
+        if let testsTargetName {
             targets.append(.target(
-                name: "\(targetName)Tests",
+                name: testsTargetName,
                 destinations: Set(arrayLiteral: destination),
                 product: .unitTests,
                 bundleId: bundleId,
