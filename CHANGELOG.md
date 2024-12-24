@@ -1,4 +1,20 @@
+## What's Changed in 0.1.111
+* Expose the GitHub token to prevent hitting 403 with Mise by @pepicrft
+* Fix continuous integration by @pepicrft in [#136](https://github.com/tuist/virtualOS/pull/136)
+* Run on macOS 15 by @pepicrft
+* Adopt the most recent Tuist conventions and fix the compilation by @pepicrft
+* Expose GITHUB_TOKEN to prevent 403 errors when we do mise install by @pepicrft
+* Update dependency tuist to v4.38.1 by @pepicrft in [#102](https://github.com/tuist/virtualOS/pull/102)
+* Update dependency tuist to v4.38.1 by @renovate[bot]
+* Update dependency node to v22 by @pepicrft in [#99](https://github.com/tuist/virtualOS/pull/99)
+* Update dependency node to v22 by @renovate[bot]
+* Update dependency Kolos65/Mockable to from: "0.2.0" by @pepicrft in [#80](https://github.com/tuist/virtualOS/pull/80)
+* Update dependency Kolos65/Mockable to from: "0.2.0" by @renovate[bot]
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.110...0.1.111
+
 ## What's Changed in 0.1.110
+* release 0.1.110 by @renovate[bot]
 * Lock file maintenance by @renovate[bot] in [#135](https://github.com/tuist/virtualOS/pull/135)
 * Update dependency pnpm to v9.15.1 by @renovate[bot] in [#134](https://github.com/tuist/virtualOS/pull/134)
 
