@@ -1,4 +1,13 @@
+## What's Changed in 0.1.113
+* chore(deps): update dependency tuist to v4.38.2 by @pepicrft in [#137](https://github.com/tuist/virtualOS/pull/137)
+* chore(deps): update dependency tuist to v4.38.2 by @renovate[bot]
+* chore(deps): update dependency macos to v14 by @pepicrft in [#138](https://github.com/tuist/virtualOS/pull/138)
+* chore(deps): update dependency macos to v14 by @renovate[bot]
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.112...0.1.113
+
 ## What's Changed in 0.1.112
+* release 0.1.112 by @pepicrft
 * Add a home page by @pepicrft
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.111...0.1.112
