@@ -1,4 +1,10 @@
+## What's Changed in 0.1.112
+* Add a home page by @pepicrft
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.111...0.1.112
+
 ## What's Changed in 0.1.111
+* release 0.1.111 by @pepicrft
 * Expose the GitHub token to prevent hitting 403 with Mise by @pepicrft
 * Fix continuous integration by @pepicrft in [#136](https://github.com/tuist/virtualOS/pull/136)
 * Run on macOS 15 by @pepicrft
