@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kolos65/Mockable",
       "state" : {
-        "revision" : "da977ecb20974c4b1cf185f5fd38771b2d4674fb",
-        "version" : "0.0.10"
+        "revision" : "e1b311b01c11415099341eee49769185e965ac4c",
+        "version" : "0.2.0"
       }
     },
     {
@@ -32,8 +32,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swiftlang/swift-syntax.git",
       "state" : {
-        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
-        "version" : "509.1.1"
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "a3f634d1a409c7979cabc0a71b3f26ffa9fc8af1",
+        "version" : "1.4.3"
       }
     }
   ],
