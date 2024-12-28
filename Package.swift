@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/tuist/path", .upToNextMajor(from: "0.3.8")),
         .package(url: "https://github.com/tuist/FileSystem/", .upToNextMajor(from: "0.6.23")),
-        .package(url: "https://github.com/apple/swift-service-context", .upToNextMajor(from: "1.0.0")),
+        .package(url: "https://github.com/apple/swift-service-context", .upToNextMajor(from: "1.1.0")),
         .package(url: "https://github.com/apple/swift-log", .upToNextMajor(from: "1.6.2")),
         .package(url: "https://github.com/chrisaljoudi/swift-log-oslog", .upToNextMajor(from: "0.2.2")),
         .package(url: "https://github.com/crspybits/swift-log-file", .upToNextMajor(from: "0.1.0")),
