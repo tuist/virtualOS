@@ -1,4 +1,13 @@
+## What's Changed in 0.1.114
+* Set up default environment and logger instances by @pepicrft in [#139](https://github.com/tuist/virtualOS/pull/139)
+* Create VirtualOSEnvironmentInterface by @pepicrft
+* Add directories to Environment by @pepicrft
+* Add logger setup by @pepicrft
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.113...0.1.114
+
 ## What's Changed in 0.1.113
+* release 0.1.113 by @pepicrft
 * chore(deps): update dependency tuist to v4.38.2 by @pepicrft in [#137](https://github.com/tuist/virtualOS/pull/137)
 * chore(deps): update dependency tuist to v4.38.2 by @renovate[bot]
 * chore(deps): update dependency macos to v14 by @pepicrft in [#138](https://github.com/tuist/virtualOS/pull/138)
