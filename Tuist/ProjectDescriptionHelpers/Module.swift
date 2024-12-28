@@ -38,9 +38,9 @@ public enum Module: CaseIterable {
 
     public var interfaceTargetName: String? {
         switch self {
-        case .virtualos, .environment, .logging:
+        case .virtualos, .logging:
             return nil
-        case .pull, .run, .network, .oci, .storage:
+        case .pull, .run, .network, .oci, .storage, .environment:
             return "\(targetName)Interface"
         }
     }

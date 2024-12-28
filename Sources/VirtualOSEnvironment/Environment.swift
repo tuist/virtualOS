@@ -1,22 +1,7 @@
 import FileSystem
 import Foundation
 import Path
-import ServiceContextModule
-
-enum EnvironmentKey: ServiceContextKey {
-    typealias Value = Environment
-}
-
-extension ServiceContext {
-    public internal(set) var environment: Environment? {
-        get {
-            self[EnvironmentKey.self]
-        }
-        set {
-            self[EnvironmentKey.self] = newValue
-        }
-    }
-}
+import VirtualOSEnvironmentInterface
 
 public enum EnvironmentError: Error, Equatable, CustomStringConvertible {
     case couldntObtainCacheDirectory
@@ -30,36 +15,36 @@ public enum EnvironmentError: Error, Equatable, CustomStringConvertible {
         case .couldntObtainDataDirectory:
             "We couldn't obtain the data directory. Make sure either $XDG_DATA_HOME or $HOME are present in the environment."
         case .couldntObtainConfigDirectory:
-            "We couldn't obtain the data directory. Make sure either $XDG_CONFIG_HOME or $HOME are present in the environment."
+            "We couldn't obtain the config directory. Make sure either $XDG_CONFIG_HOME or $HOME are present in the environment."
         }
     }
 }
 
 /// Environment represents the environment variable.
-public struct Environment: Sendable {
+public struct Environment: Environmenting {
     /// Environment variables of the environment in which virtualOS is running.
-    var variables: [String: String]
+    public var variables: [String: String]
 
     /// The current working directory.
-    var currentWorkingDirectory: AbsolutePath
+    public var currentWorkingDirectory: AbsolutePath
 
     /// The cache directory.
-    var cacheDirectory: AbsolutePath
+    public var cacheDirectory: AbsolutePath
 
     /// The data directory.
-    var dataDirectory: AbsolutePath
+    public var dataDirectory: AbsolutePath
 
     /// The config directory.
-    var configDirectory: AbsolutePath
+    public var configDirectory: AbsolutePath
 
     /// It returns the current environment.
     /// - Returns: It should not be used directly, but dependency-injected down from the root of the program.
     static func current() async throws -> Environment {
         let variables = ProcessInfo.processInfo.environment
         let fileSystem = FileSystem()
-        let homeDirectory = try variables["$HOME"].map { try AbsolutePath(validating: $0) }
+        let homeDirectory = try variables["HOME"].map { try AbsolutePath(validating: $0) }
 
-        let cacheDirectory = if let xdgCacheHomeDirectory = try variables["$XDG_CACHE_HOME"]
+        let cacheDirectory = if let xdgCacheHomeDirectory = try variables["XDG_CACHE_HOME"]
             .map({ try AbsolutePath(validating: $0) }) ?? homeDirectory?.appending(components: [".cache"])
         {
             xdgCacheHomeDirectory.appending(component: "virtualOS")
@@ -67,7 +52,7 @@ public struct Environment: Sendable {
             throw EnvironmentError.couldntObtainCacheDirectory
         }
 
-        let dataDirectory = if let xdgDataHomeDirectory = try variables["$XDG_DATA_HOME"]
+        let dataDirectory = if let xdgDataHomeDirectory = try variables["XDG_DATA_HOME"]
             .map({ try AbsolutePath(validating: $0) }) ?? homeDirectory?
             .appending(components: [".local", "share"])
         {
@@ -75,7 +60,7 @@ public struct Environment: Sendable {
         } else {
             throw EnvironmentError.couldntObtainDataDirectory
         }
-        let configDirectory = if let xdgConfigHomeDirectory = try variables["$XDG_CONFIG_HOME"]
+        let configDirectory = if let xdgConfigHomeDirectory = try variables["XDG_CONFIG_HOME"]
             .map({ try AbsolutePath(validating: $0) }) ?? homeDirectory?.appending(components: [".config"])
         {
             xdgConfigHomeDirectory.appending(component: "virtualOS")
