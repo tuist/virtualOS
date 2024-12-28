@@ -1,4 +1,10 @@
+## What's Changed in 0.1.115
+* chore(deps): update dependency apple/swift-service-context to from: "1.1.0" by @renovate[bot] in [#140](https://github.com/tuist/virtualOS/pull/140)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.114...0.1.115
+
 ## What's Changed in 0.1.114
+* release 0.1.114 by @pepicrft
 * Set up default environment and logger instances by @pepicrft in [#139](https://github.com/tuist/virtualOS/pull/139)
 * Create VirtualOSEnvironmentInterface by @pepicrft
 * Add directories to Environment by @pepicrft
