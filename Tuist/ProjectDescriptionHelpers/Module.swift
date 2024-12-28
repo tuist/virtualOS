@@ -68,6 +68,7 @@ public enum Module: CaseIterable {
             return [
                 .external(name: "Path"),
                 .external(name: "ServiceContextModule"),
+                .external(name: "FileSystem"),
             ]
         case .logging:
             return [
