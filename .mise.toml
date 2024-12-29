@@ -7,7 +7,7 @@
 "pnpm" = "9.15.2"
 "git-cliff" = "2.4.0"
 
-[plugins]
-tuist = "https://github.com/asdf-community/asdf-tuist"
-swift = "https://github.com/fcrespo82/asdf-swift"
-virtualos = "https://github.com/tuist/asdf-virtualos"
+[alias]
+tuist = "asdf:asdf-community/asdf-tuist"
+swift = "asdf:fcrespo82/asdf-swift"
+virtualos = "asdf:tuist/asdf-virtualos"
