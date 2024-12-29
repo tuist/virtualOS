@@ -1,4 +1,10 @@
+## What's Changed in 0.1.116
+* chore(deps): update dependency pnpm to v9.15.2 by @renovate[bot] in [#141](https://github.com/tuist/virtualOS/pull/141)
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.115...0.1.116
+
 ## What's Changed in 0.1.115
+* release 0.1.115 by @renovate[bot]
 * chore(deps): update dependency apple/swift-service-context to from: "1.1.0" by @renovate[bot] in [#140](https://github.com/tuist/virtualOS/pull/140)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.114...0.1.115
