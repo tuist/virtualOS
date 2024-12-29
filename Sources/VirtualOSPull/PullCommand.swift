@@ -1,4 +1,7 @@
 import ArgumentParser
+import Logging
+import ServiceContextModule
+import VirtualOSLogging
 
 /**
  This command is responsible from pulling images from remote registries.
@@ -18,5 +21,7 @@ public struct PullCommand: AsyncParsableCommand {
 
     public init() {}
 
-    public func run() async throws {}
+    public func run() async throws {
+        ServiceContext.current?.logger?.info("Pulling images")
+    }
 }
