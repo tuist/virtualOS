@@ -5,7 +5,7 @@ enum EnvironmentKey: Sendable, ServiceContextKey {
 }
 
 extension ServiceContext {
-    public internal(set) var environment: Environmenting? {
+    public var environment: Environmenting? {
         get {
             self[EnvironmentKey.self]
         }

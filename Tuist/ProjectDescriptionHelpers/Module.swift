@@ -50,11 +50,20 @@ public enum Module: CaseIterable {
         case .virtualos: return [
                 .target(name: Module.pull.targetName),
                 .target(name: Module.run.targetName),
+                .target(name: Module.logging.targetName),
+                .target(name: Module.environment.targetName),
+                .target(name: Module.environment.interfaceTargetName!),
+                .external(name: "ServiceContextModule"),
                 .external(name: "ArgumentParser"),
+                .external(name: "Logging"),
+                .external(name: "Path"),
             ]
         case .pull: return [
+                .target(name: Module.logging.targetName),
                 .external(name: "ArgumentParser"),
                 .external(name: "Path"),
+                .external(name: "ServiceContextModule"),
+                .external(name: "Logging"),
             ]
         case .run: return [
                 .external(name: "ArgumentParser"),

@@ -39,7 +39,7 @@ public struct Environment: Environmenting {
 
     /// It returns the current environment.
     /// - Returns: It should not be used directly, but dependency-injected down from the root of the program.
-    static func current() async throws -> Environment {
+    public static func current() async throws -> Environment {
         let variables = ProcessInfo.processInfo.environment
         let fileSystem = FileSystem()
         let homeDirectory = try variables["HOME"].map { try AbsolutePath(validating: $0) }

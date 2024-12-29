@@ -8,6 +8,7 @@
 
     let packageSettings = PackageSettings(baseSettings: .settings(base: [
         "SWIFT_STRICT_CONCURRENCY": "complete",
+        "GENERATE_MASTER_OBJECT_FILE": "YES",
     ]))
 #endif
 
