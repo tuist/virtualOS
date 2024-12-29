@@ -1,4 +1,12 @@
+## What's Changed in 0.1.117
+* Fixes by @pepicrft
+* Set up environment and logging infrastructure by @pepicrft in [#142](https://github.com/tuist/virtualOS/pull/142)
+* Set up logging by @pepicrft
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.116...0.1.117
+
 ## What's Changed in 0.1.116
+* release 0.1.116 by @renovate[bot]
 * chore(deps): update dependency pnpm to v9.15.2 by @renovate[bot] in [#141](https://github.com/tuist/virtualOS/pull/141)
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.115...0.1.116
