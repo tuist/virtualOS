@@ -27,6 +27,7 @@ extension Logger {
     public static func makeDefaultLogger(logFilePath: AbsolutePath) -> Logger {
         Logger(label: "dev.tuist.virtualos") { label in
             MultiplexLogHandler([
+                // swiftlint:disable:next force_try
                 try! FileLogHandler(label: label, localFile: URL(fileURLWithPath: logFilePath.pathString)),
                 LoggingOSLog(label: label),
             ])

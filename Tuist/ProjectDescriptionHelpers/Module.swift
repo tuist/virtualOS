@@ -57,6 +57,7 @@ public enum Module: CaseIterable {
                 .external(name: "ArgumentParser"),
                 .external(name: "Logging"),
                 .external(name: "Path"),
+                .external(name: "FileSystem"),
             ]
         case .pull: return [
                 .target(name: Module.logging.targetName),
