@@ -1,4 +1,10 @@
+## What's Changed in 0.1.118
+* Refactor .mise.toml: Change plugin definitions to alias format for asdf integration by @pepicrft
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.117...0.1.118
+
 ## What's Changed in 0.1.117
+* release 0.1.117 by @pepicrft
 * Fixes by @pepicrft
 * Set up environment and logging infrastructure by @pepicrft in [#142](https://github.com/tuist/virtualOS/pull/142)
 * Set up logging by @pepicrft
