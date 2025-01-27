@@ -1,4 +1,23 @@
+## What's Changed in 0.1.119
+* chore(deps): lock file maintenance by @pepicrft in [#144](https://github.com/tuist/virtualOS/pull/144)
+* chore(deps): lock file maintenance by @renovate[bot]
+* chore(deps): update dependency tuist/filesystem to from: "0.7.2" by @pepicrft in [#149](https://github.com/tuist/virtualOS/pull/149)
+* chore(deps): update dependency tuist/filesystem to from: "0.7.2" by @renovate[bot]
+* chore(deps): update dependency wrangler to v3.105.1 by @pepicrft in [#147](https://github.com/tuist/virtualOS/pull/147)
+* chore(deps): update dependency wrangler to v3.105.1 by @renovate[bot]
+* chore(deps): update dependency tuist to v4.40.0 by @pepicrft in [#148](https://github.com/tuist/virtualOS/pull/148)
+* chore(deps): update dependency tuist to v4.40.0 by @renovate[bot]
+* chore(deps): update dependency pnpm to v9.15.4 by @pepicrft in [#145](https://github.com/tuist/virtualOS/pull/145)
+* chore(deps): update dependency pnpm to v9.15.4 by @renovate[bot]
+* chore(deps): update dependency node to v22.13.1 by @pepicrft in [#146](https://github.com/tuist/virtualOS/pull/146)
+* chore(deps): update dependency node to v22.13.1 by @renovate[bot]
+* chore(deps): update dependency vitepress to v1.6.3 by @pepicrft in [#150](https://github.com/tuist/virtualOS/pull/150)
+* chore(deps): update dependency vitepress to v1.6.3 by @renovate[bot]
+
+**Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.118...0.1.119
+
 ## What's Changed in 0.1.118
+* release 0.1.118 by @pepicrft
 * Refactor .mise.toml: Change plugin definitions to alias format for asdf integration by @pepicrft
 
 **Full Changelog**: https://github.com/tuist/virtualOS/compare/0.1.117...0.1.118

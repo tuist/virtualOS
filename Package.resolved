@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tuist/FileSystem/",
       "state" : {
-        "revision" : "86b34a05c343cd30a72214684984543d346febcf",
-        "version" : "0.6.23"
+        "revision" : "b2c6c9a68fd7609ca1b7b3e8dd4d2fc76396eac3",
+        "version" : "0.7.2"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio",
       "state" : {
-        "revision" : "dca6594f65308c761a9c409e09fbf35f48d50d34",
-        "version" : "2.77.0"
+        "revision" : "ba72f31e11275fc5bf060c966cf6c1f36842a291",
+        "version" : "2.79.0"
       }
     },
     {
