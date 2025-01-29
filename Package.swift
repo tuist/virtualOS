@@ -15,7 +15,7 @@
 let package = Package(
     name: "virtualOS",
     dependencies: [
-        .package(url: "https://github.com/Kolos65/Mockable", .upToNextMajor(from: "0.2.0")),
+        .package(url: "https://github.com/Kolos65/Mockable", .upToNextMajor(from: "0.3.0")),
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMajor(from: "1.5.0")),
         .package(url: "https://github.com/tuist/path", .upToNextMajor(from: "0.3.8")),
         .package(url: "https://github.com/tuist/FileSystem/", .upToNextMajor(from: "0.7.2")),
